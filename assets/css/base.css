@@ -1,5 +1,7 @@
 :root {
   --primary-color: #212832;
+  --neutral-color: #48496a;
+  --second-color: #212832;
 
   /* body variable */
   --bs-bgr-color: #f8feff;
@@ -11,6 +13,10 @@
 
   /* text color variable  */
   --heading-text-color: #212832;
+  --heading-font-size: 5rem;
+  --heading-line-height: 1.25;
+  --heading-text-color: #212832;
+
   --title-text-color: #212832;
   --btn-link-text-color: #000958;
   --neutral-text-color: #48496a;
@@ -145,13 +151,15 @@ section img {
 
 .btn-link,
 .btn {
-  display: inline-block;
-  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   min-width: 9.8rem;
+  width: max-content;
   padding: 1rem 1.8rem;
+
   text-align: center;
-  cursor: pointer;
-  user-select: none;
   text-decoration: none;
   vertical-align: middle;
   text-wrap: nowrap;
